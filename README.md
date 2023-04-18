@@ -5,8 +5,8 @@
 --------|------ 
 23/04/17 | [설치 및 연산자](teacher_study/20230417.md)
 23/04/18 | [단위, 조건문, 비교/논리 연산자](teacher_study/20230418.md)
-  
-  
+# 
+#  
 ## [따로 혼자 공부]
 ### [파이썬 공부 블로그](https://velog.io/@wonjun12/series/%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5-%EA%B0%9C%EB%B0%9C-Python-%EA%B3%B5%EB%B6%80)
 [날짜] | [링크]
