@@ -15,6 +15,8 @@
 23/04/17 |[기초 공부](https://velog.io/@wonjun12/%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5-%EA%B0%9C%EB%B0%9C-Python-%EA%B3%B5%EB%B6%80)
  -- |[기초 제어문](https://velog.io/@wonjun12/%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5-Python-%EA%B8%B0%EC%B4%88-%EC%A0%9C%EC%96%B4%EB%AC%B8)
  -- | [기초 함수](https://velog.io/@wonjun12/%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5-Python-%EA%B8%B0%EC%B4%88-%ED%95%A8%EC%88%98-%EB%B3%80%EC%88%98)
- 23/04/18 | [알고리즘 공부](https://velog.io/@wonjun12/230418-Python-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B3%B5%EB%B6%80)
+ 23/04/18 | [알고리즘 기초 공부](https://velog.io/@wonjun12/230418-Python-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B3%B5%EB%B6%80)
+ 23/04/19 | [알고리즘 기초 공부2](https://velog.io/@wonjun12/230419-Python-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B3%B5%EB%B6%80)
+ 
  
  
