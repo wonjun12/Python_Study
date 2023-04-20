@@ -121,3 +121,8 @@ for i in range(1, 10):
 # git에 넣는데 이름과 이메일 오류 발생시
 # git config --global user.name "wonjun12"
 # git config --global user.email "wjdaks333@naver.com"
+
+
+# git add .
+# git commit -m "Add python files"
+# git push
