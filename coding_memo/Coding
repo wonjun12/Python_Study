@@ -1,0 +1,126 @@
+소인수 분해 함수 참고용이다. not in도 유심히 불 필요가 있다. 
+d = 2
+    while d <= b:
+        if b % d == 0:
+            b /= d
+            if d not in answer:
+                answer.append(d)
+        else:
+            d += 1
+
+
+특정 소수의 소수점이 전부 0인지 판별한다.
+float(a/b).is_integer()
+
+
+'3' in str(정수)
+정수 값을 문자열로 변경해 3이라는 수가 존재하는지 판별한다.
+while answer % 3 == 0 or '3' in str(answer):
+            answer += 1
+
+
+
+람다 사용 법
+찾아 봐야할듯
+sorted(numlist,key = lambda x : (abs(x-n), n-x))
+
+내가 했던 방식에서 람다로 줄일 수 있다.
+def solution(numlist, n):
+    answer = [abs(n-i) for i in numlist]
+    
+    i = 0 
+    while i < len(numlist):
+        start_index = i
+        index_count = answer[i:].count(min(answer[i:]))
+        for n in range(index_count):
+            find_num = answer[i:].index(min(answer[i:])) + i
+            answer[i], answer[find_num] = answer[find_num], answer[i]
+            numlist[i], numlist[find_num] = numlist[find_num], numlist[i]
+            i += 1
+        dummy_num = sorted(numlist[start_index:start_index+ index_count])[::-1]
+        numlist[start_index:start_index+ index_count] = dummy_num        
+    
+    return numlist
+
+
+
+
+
+반복문을 돌릴때 split를 따로 변수로 받아서 하는것보다
+반복문에 직접 할때 조금 더빠르다.
+ for i in polynomial.split(" + "):
+     
+
+
+
+특정 랜덤 수를 받아 가장 자주 많이 나오는 값을 찾는 함수다
+딕셔너리를 사용하여 풀긴했지만
+result = {}
+    for i in list(set(array)):
+        result[i] = array.count(i)
+    
+    result_keys = list(result.keys())
+    result_values = list(result.values())
+    if result_values.count(max(result_values)) > 1:
+        return -1
+    else:
+        return result_keys[result_values.index(max(result_values))]
+
+
+아래와 같이 enumerate를 사용해서 간단하게도 가능하다.
+while len(array) != 0:
+        for i, a in enumerate(set(array)):
+            array.remove(a)
+        if i == 0: return a
+    return -1
+
+내장 함수 eval()을 이용하면 문장열인 계산식을 계산할 수 있다.
+eval(equation)
+
+
+
+두 수의 최대 공약수를 찾아내는 함수다.
+for i in range(1, answer[1] + 1):
+        if (answer[0] % i == 0) & (answer[1] % i == 0):
+            answer_values = i 
+
+
+폭탄 범위를 나타내는 방법이다.
+리스트의 범위를 넘어가서 오류를 일으키는것에 대해 try를 이용해 해결했다.
+def solution(board):
+    for x in range(len(board)):
+        for y in range(len(board[x])):
+            if board[x][y] == 1:
+                for x_n in range(-1, 2):
+                    for y_n in range(-1, 2):
+                        try:
+                            if board[x+x_n][y+y_n] == 0 and x+x_n != -1 and y+y_n != -1:
+                                board[x+x_n][y+y_n] = 2
+                        except:
+                            continue              
+    answer = 0
+    for i in range(len(board)):
+        answer += board[i].count(0)
+    return answer
+
+
+
+
+좌표으 길이 3개가 있다. 겹치는 길이를 구하는 함수다.
+sets = [set(range(min(l), max(l))) for l in lines]
+    return len(sets[0] & sets[1] | sets[0] & sets[2] | sets[1] & sets[2])
+
+
+def solution(lines):
+    answer = []
+    
+    for i in range(len(lines)-1):
+        for j in range(i+1, len(lines)):
+            for n1 in range(lines[i][0], lines[i][1]):
+                line_length = (n1, n1+1)
+                for n2 in range(lines[j][0], lines[j][1]):
+                    line2_length = (n2, n2+1)
+                    if line_length == line2_length:
+                        answer.append(line_length)
+    
+    return len(list(set(answer)))
