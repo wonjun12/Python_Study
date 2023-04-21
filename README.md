@@ -7,7 +7,7 @@
 23/04/18 | [단위, 조건문, 비교/논리 연산자](teacher_study/20230418.md)  
 23/04/19 | [형 변환, list, dictionary 기초 및 사용법](teacher_study/20230419.md)
 23/04/20 | [while, for, 간단 대입 연산자, git과 VSCode 사용법](teacher_study/20230420.md)
-23/04/21 | [마크 다운 사용법](teacher_study/마크다운 사용법.md)
+23/04/21 | [마크 다운 사용법](teacher_study/markdown_Edit.md)
  
   
 ## [따로 혼자 공부]
