@@ -1,0 +1,48 @@
+# 참고용
+def solution(dots):
+    [[x1, y1], [x2, y2], [x3, y3], [x4, y4]]=dots
+    answer1 = ((y1-y2)*(x3-x4) == (y3-y4)*(x1-x2))
+    answer2 = ((y1-y3)*(x2-x4) == (y2-y4)*(x1-x3))
+    answer3 = ((y1-y4)*(x2-x3) == (y2-y3)*(x1-x4))
+    return 1 if answer1 or answer2 or answer3 else 0
+
+# 내가 한 방식
+# 단순 복사를 사용했었으나, 깊은 복사와 차이점을 알게 되었다.
+for i in range(1, len(dots)):
+        dots_result = list(dots)
+        dot1 = [dots_result.pop(i), dots_result.pop(0)] 
+        dot1_angle = (dot1[0][1] - dot1[1][1]) / (dot1[0][0] - dot1[1][0])
+        dot2_angle = (dots_result[1][1] - dots_result[0][1]) / (dots_result[1][0] - dots_result[0][0])
+        
+        if dot1_angle == dot2_angle:
+            return 1
+
+
+
+
+외톨이 알파벳 기존의 방법
+def solution(input_string):
+    answer = ''
+    
+    input_list = list()
+    i = 0
+    while i < len(input_string):
+        count = 0
+        input_str = input_string[i]
+        for s in range(i+1, len(input_string)):
+            if input_string[i] == input_string[s]:
+                input_str += input_string[s]
+                count += 1
+            else:
+                break
+        input_list.append(input_str)
+        i += 1 + count
+        
+    for s_1 in range(len(input_list)-2):
+        for s_2 in range(s_1+2, len(input_list)):
+            if input_list[s_1] == input_list[s_2]:
+                answer += input_list[s_1]
+                break
+
+    
+    return ''N' if answer == '' else ''.join(sorted(list(set(answer))))'
