@@ -9,6 +9,7 @@
 23/04/20 | [[while, for, 간단 대입 연산자, git과 VSCode 사용법]](teacher_study/20230420.md)
 23/04/21 | [[마크 다운 사용법]](teacher_study/markdown_Edit.md)
 --       | [[Python 주소 특징, Tuple 사용법, Zip()]](teacher_study/20230421.md)
+23/04/24 | [[function 기본개념, define 함수 정의, 별찍기]](teacher_study/20230424.md)
  
   
 ## [따로 혼자 공부]
@@ -25,5 +26,6 @@
  -- | [[얕은 복사와 깊은 복사]](https://velog.io/@wonjun12/%EC%96%95%EC%9D%80-%EB%B3%B5%EC%82%ACShallow-Copy%EC%99%80-%EA%B9%8A%EC%9D%80-%EB%B3%B5%EC%82%ACDeep-Copy)
   -- | [[PCCP 모의고사 1회 - 외톨이 알파벳 풀이]](https://velog.io/@wonjun12/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-PCCP-%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-1%ED%9A%8C-%EC%99%B8%ED%86%A8%EC%9D%B4-%EC%95%8C%ED%8C%8C%EB%B2%B3)
  -- | [[enumerate 사용법]](https://velog.io/@wonjun12/enumerate-%EC%82%AC%EC%9A%A9-%EB%B2%95#%EC%9A%B0%EC%84%A0-%EA%B8%B0%EC%A1%B4-for%EC%9D%98-%EC%82%AC%EC%9A%A9%EB%B2%95)
+ 23/04/24 | [[바인딩(Binding) 이란?]](https://velog.io/@wonjun12/%EB%B0%94%EC%9D%B8%EB%94%A9)
 
  
