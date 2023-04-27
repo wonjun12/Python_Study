@@ -237,3 +237,39 @@ else: # 오류가 없을때 실행
 class Brid:
     def fly(self):
         raise NotImplementedError
+    
+
+
+# 테스트 문제
+from my_calcauator import MyCalculator
+class MaxLimitCal(MyCalculator):
+    def add(self, a, b): # 메서드 오버라이딩
+        if self.IsNumberOver(a, b):
+            result = a + b
+            if result > 100:
+                print("계산 결과가 100보다 작아야함.")
+            else :
+                print(f"{a} + {b} = {a+b}")
+    def sub(self, a, b):
+        if self.IsNumberOver(a,b):
+            result = a-b
+            print(f"{a} + {b} = {a+b}")
+    def mul(self, a, b):
+        pass
+    def div(self, a, b):
+        if self.IsNumberOver(a, b):
+            try:
+                result = a / b
+            except:
+                print("0으로 나누지 마셈")
+                return
+            print(f"{a/b}")
+    def IsNumberOver(self, a, b):
+        if a > 100 or b > 100:
+            print("100보다 작은 수 입력하세요.")
+            return False
+        else:
+            return True
+            
+
+my_max_limit_calcaulator = MaxLimitCal()

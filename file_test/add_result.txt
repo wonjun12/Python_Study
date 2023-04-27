@@ -1,2 +1,23 @@
 3 + 6 = 9
 8 + 10 = 18
+
+
+📘 처음에 카테고리 관련된 문제를 풀면서 개념을 잡을 때는 백준으로 풀고, 알고리즘 문제풀이 자체에 익숙해졌다 싶으면 leetcode로 풀기
+leetcode로 풀다가 이해 안 가는 카테고리만 백준에서 찾아서 푸는 게 가장 좋음
+leetcode의 easy와 medium을 다 푸는 것도 괜찮음
+(특히 medium이 괜찮고, 공채 신입 준비면 hard까지)
+
+👉🏻 각 사이트의 장점만 사용
+적중률 높은 leetcode를 풀다가, leetcode에서 카테고리의 문제가 좀 이해가 안되는 문제가 많으면, 백준에서 그 문제들만 모아서 풀어보는 방식
+
+📘 leetcode 공부 방법
+https://leetcode.com/explore/learn/ 여기서 기본적인 카테고리별 문제들을 풀면서 leetcode의 스타일을 익히기
+
+스타일이 어느 정도 파악되었으면 https://leetcode.com/problemset/algorithms/ 에서 top 100 liked questions들로 정렬해서 풀고, 그 후 top interview questions를 풀기
+
+'좋아요'가 많은 문제 풀기
+
+(참고 문제 풀이 : https://qkqhxla1.tistory.com/category/algorithm/problem%20solving)
+
+
+코테 공부 참고 사이트 : https://covenant.tistory.com/220

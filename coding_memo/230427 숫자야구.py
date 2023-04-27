@@ -1,0 +1,80 @@
+# 1. 정답을 정한다. 4자리 숫자(랜덤)
+# 2. 게임 유저가 정답을 입력한다.
+# 3. 정답과 비교해서 S / B / Out 개수 알려준다.
+# 4. 정답을 맞추거나, 종료를 입력하면 끝낸다.
+# 5. 한번 더 하시겠습니까? 넣기
+
+import random
+
+def Create_Random_Number():
+    answer_list = list(range(10))
+    random.shuffle(answer_list)
+    # 삼항 연산자
+    answer = answer_list[1:5] if answer_list[0] == 0 else answer_list[:4]
+    return answer
+
+def Is_Error_Cath(user_input):
+    if user_input == '종료': # 종료
+        print("게임을 종료합니다.")
+        return True
+    if not user_input.isdigit(): # 해당 문자열이 숫자인지 판별
+        print("숫자만 입력해야 합니다.")
+        return True
+    elif len(set(user_input)) != 4: # 해당 숫자가 4자리 인지 판별 / 중복 숫자 판별
+        print("중복되지 않는 4자리 숫자로 입력해야 합니다.")
+        return True
+    elif user_input in input_memo.keys(): # 이미 입력한 숫자인지 판별
+        print("이미 입력한 정답입니다. 다시 입력하세요.\n")
+        return True
+    return False
+
+def Result_String(user_input, answer):
+    result = ''
+    for s in range(len(user_input)):
+        input_value = int(user_input[s])
+
+        if input_value not in answer:
+            result += 'O'
+        elif input_value == answer[s]:
+            result += 'S'
+        elif input_value in answer:
+            result += 'B'
+    return result
+
+answer = Create_Random_Number()
+input_memo = {}
+while True:
+    user_input = input("4자리 랜덤 수 정답은 : ")
+    
+    if Is_Error_Cath:
+        continue
+    
+    # 몇번째 숫자가 해당 문자랑 맞는지 확인하기 어렵게 정렬 후 문자열로 변환
+    result = ''.join(sorted(Result_String(user_input, answer)))
+
+    # 이전에 작성했던 숫자인지 판별
+    input_memo[user_input] = result
+    for key, value in input_memo.items():
+        print(f"입력 {key} / 결과 {value}")
+
+    if result == 'SSSS':
+        print(f"정답 입니다!!! 정답 확인 횟수 : {len(input_memo)}")
+        IsConti = input("다시 시작하겠습니까? (Y / N)")
+        if IsConti == 'Y' or IsConti == 'y':
+            answer_list = Create_Random_Number()
+            input_memo.clear()
+        else:
+            break
+    
+    
+
+
+
+
+# 삼항 연산자
+# 참일때값 if 조건 else 거짓일때값
+#result = "참" if True else "거짓"
+
+# isdigit()
+# 문자열의 메서드
+# 해당 문자가 숫자로만 이루어진 문자열인지 판별한다.
