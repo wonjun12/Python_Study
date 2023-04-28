@@ -17,6 +17,8 @@
 23/04/27 | [[표준 라이브러리 사용법, datetime, time, math, random, os, 외부라이브러리 설치 방법]](teacher_study/20230427-0.md)
 --       | [[in 연산자, 삼항 연산자, isdigit()]](teacher_study/20230427-1.md)
 --       | [[숫자 야구 게임 만들어 보기]](teacher_study/20230427-2.md)
+23/04/28 | [[crwaling, http 란?, http 상태코드, requests, BeautifulSoup]](teacher_study/20230428-0.md)
+--       | [[데이터 수집 기본 방법 예제]](teacher_study/20230428-1.md)
  
   
 ## [따로 혼자 공부]
@@ -37,3 +39,6 @@
  23/04/25 | [[PCCP 모의고사 1회 - 체육 대회 풀이]](https://velog.io/@wonjun12/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-PCCP-%EB%AA%A8%EC%9D%98%EA%B3%A0%EC%82%AC-1%ED%9A%8C-%EC%B2%B4%EC%9C%A1-%EB%8C%80%ED%9A%8C)
 -- | [[순열과 조합(permutation, combination) 사용 법]](https://velog.io/@wonjun12/%EC%88%9C%EC%97%B4%EA%B3%BC-%EC%A1%B0%ED%95%A9-permutation-combination)
  23/04/26 | [[(프로그래머스) 코딩테스트 Lv1 공부]](https://velog.io/@wonjun12/%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5-Python-%EA%B8%B0%EC%B4%88-%EC%A0%9C%EC%96%B4%EB%AC%B8)
+ 23/04/28 | [[(프로그래머스) 코딩테스트 Lv1 실패율]](https://velog.io/@wonjun12/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-230426-Python-%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-Lv1-%EC%8B%A4%ED%8C%A8%EC%9C%A8)
+ -- | [[(프로그래머스) 코딩테스트 Lv1 덧칠하기]](https://velog.io/@wonjun12/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-230426-Python-%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-Lv1-%EB%8D%A7%EC%B9%A0%ED%95%98%EA%B8%B0)
+ -- | [[(프로그래머스) 코딩테스트 Lv1 기사단원]](https://velog.io/@wonjun12/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-230428-Python-%EC%BD%94%EB%94%A9%ED%85%8C%EC%8A%A4%ED%8A%B8-Lv1-%EA%B8%B0%EC%82%AC%EB%8B%A8%EC%9B%90)
